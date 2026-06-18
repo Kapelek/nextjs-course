@@ -1,3 +1,11 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+export const metadata = {
+  title: "Course",
+  description: "Hello, hello!",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -5,7 +13,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
