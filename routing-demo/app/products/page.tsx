@@ -7,3 +7,5 @@ const Products = () => {
     </ul>
   );
 };
+
+export default Products;
