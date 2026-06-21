@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Header = () => {
   return (
     <header
@@ -7,6 +9,7 @@ const Header = () => {
       }}
     >
       <p>Header</p>
+      <Link href="/">home</Link>
     </header>
   );
 };
